@@ -1,0 +1,21 @@
+* {
+       margin: 2px;
+       /* background-color: rgb(13, 247, 40); */
+}
+
+.nav-bar a img{
+       height: 150px;
+       width: 200px;
+       margin-left: -50px;
+       margin-top: -20px;
+}
+h3{
+       color: red;
+}
+.nav-bar input {
+       width: 200px;
+}
+.img{
+       height: 300px;
+       width: 500px;
+}

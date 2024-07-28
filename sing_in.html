@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Regestration</title>
+	<link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+
+	<form class="my-form" id="myform">
+		<div class="container">
+			<h1 style="color: aqua;">Regestration! </h1>
+			<ul>
+				<li>
+					<select name="select"> 
+						<option selected disabled>-- Your occupation -- </option>
+						<option>Computer Engineer</option>
+						<option>Plumber</option>
+						<option>Electrician</option>
+						<option>Civil Engineer</option>
+						<option>Construction Inspector</option>
+						<option>Construction Worker</option>
+
+						<option>Boilermaker</option>
+						<option>Carpenter</option>
+						<option>Building engineer</option>
+						<option>Heavy equipment operator</option>
+						<option>Auto mechanic</option>
+						<option>Elevator mechanic</option>
+						<option>Ironworker</option>
+						<option>Mason</option>
+						<option>House painter and decorator</option>
+						<option>Roofer</option>
+						<option>Architect</option>
+						<option>Glazier</option>
+						<option>Pipefitter</option>
+						<option>Plasterer</option>
+						<option>Safety Manager</option>
+						<option>Tile Setter</option>
+						<option>Cost Estimators</option>
+						<option>Electronics Technician</option>
+						<option>Flooring installer</option>
+						<option>mistri</option>
+						<option></option>
+
+
+					</select>
+				</li>
+				<li>
+					<div class="grid grid-2">
+						<input type="text" placeholder="Name" required name="name">
+						<input type="text" placeholder="Surname" name="surname">
+					</div>
+				</li>
+				<li>
+					<div class="grid grid-2">
+						<input type="email" placeholder="Email" required name="email">
+						<input type="password" placeholder="password" required name="password">
+						<input type="tel" placeholder="Phone"  required name="phone">
+
+					</div>
+
+				</li>
+				<li>
+					<div class="grid grid-2">
+						<input type="text" placeholder=" district" required name="district"><br>
+						<input type="number" placeholder="pin/zip code" required name="pincode">
+					</div>
+				</li>
+				<li>
+					<textarea placeholder="Address" name="address"></textarea>
+				</li>
+				<li>
+					<input type="checkbox" id="terms">
+					<label for="terms">I have read and agreed with <a href="">the terms and
+							conditions.</a></label>
+				</li>
+				<li>
+
+					<div class="grid grid-3">
+						<div class="required-msg">REQUIRED FIELDS</div>
+						<button class="btn-grid" type="submit" disabled name="submit">
+							<span class="back">
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg"
+									alt="">
+							</span>
+							<span class="front">SUBMIT</span>
+						</button>
+						<button class="btn-grid" type="reset" disabled>
+							<span class="back">
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg"
+									alt="">
+							</span>
+							<span class="front">RESET</span>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</form>
+	<footer>
+		<div class="container">
+			<!-- <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+		  </small> -->
+		</div>
+	</footer>
+
+
+</body>
+<!-- <script type="text/javascript">
+
+	const checkbox = document.querySelector('.my-form input[type="checkbox"]');
+	const btns = document.querySelectorAll(".my-form button");
+
+	checkbox.addEventListener("change", function () {
+		const checked = this.checked;
+		for (const btn of btns) {
+			checked ? (btn.disabled = false) : (btn.disabled = true);
+		}
+	});
+
+	let url = "https://script.google.com/macros/s/AKfycby7EsCSaPkPGiXlLVq6SJ5YWiQBF0JPUHklt3Uxl0l5wpX8s6zfRlnMA09Rvnc-GXbpbA/exec";
+	
+	// let form = document.querySelector('#form');
+	let form = document.getElementById('myform');
+	myform.addEventListener("submit", (e)=>{
+		let d = new FormData(form);
+		fetch(url,{
+			method:"POST",
+			body:d
+		}).then((res)=>res.text())
+		.then((finalRes)=>console.log(finalRes))
+		e.preventDefault();
+		alert("YOUR REGESTRATION SUCCESSFUL");
+		window.open("./index.html");
+	})
+</script> -->
+<script src="database.js"></script>
+<!-- datasheet link -->
+<!-- https://docs.google.com/spreadsheets/d/1Z85fF52zlLvolL7C8KK8bSLx1PQGcBjn8KvBbwLOXUc/edit?gid=0#gid=0  -->
+
+</html>
