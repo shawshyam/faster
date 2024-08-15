@@ -1,0 +1,520 @@
+* {
+       margin: 0px;
+       
+       /* background-color: rgb(13, 247, 40); */
+}
+
+.my {
+       
+}
+
+body {
+       /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+       background: #d8ff82;
+       background-size: 400% 400%;
+       animation: gradient 15s ease infinite;
+       height: 100vh;
+}
+
+
+
+.logo .h {
+       font-size: 40px;
+       font-family: 'Times New Roman', Times, serif;
+       color: black;
+       text-align: center;
+}
+
+.logo img {
+       border-radius: 200px;
+       width: 150px;
+       height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+       .logo img {
+              border-radius: 20px;
+              width: 130px;
+              height: 100px;
+       }
+      
+     }
+
+.logo .size {
+       height: 80px;
+       width: 80px;
+       /* style="height: 90px; width: 90px;" */
+
+
+}
+.logo .inp{
+       background-color: rgb(240, 245, 243);
+       height:30px;
+       width: 290px;
+       margin: 2px;
+       border: 2px solid rgb(0, 23, 128);
+       border-radius: 10px;
+       font-size: 20px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+}
+.logo .inp-sel{
+       background-color: rgb(240, 245, 243);
+       height:35px;
+       width: 300px;
+       margin: 2px;
+       border: 2px solid rgb(0, 39, 213);
+       border-radius: 10px;
+       font-size: 20px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+}
+
+#preloader{
+       background: #081c34 url("l2.gif") no-repeat center;
+       height: 100vh;
+       width: 100%;
+       position: fixed;
+       z-index: 200;
+       background-size: 70%;
+
+}
+
+@media only screen and (max-width: 600px) {
+       #preloader{
+              background: #081c34 url("l2.gif") no-repeat center;
+              height: 100vh;
+              width: 90%;
+              position: fixed;
+              z-index: 200;
+              background-size: 30%;
+             
+
+       
+       }
+      
+     }
+
+#preloader p{
+       color: rgb(253, 253, 253);
+       margin: 130px; 
+       margin-top: 430px;
+       font-size: 30px;
+}
+
+.photos{
+       height: 300px;
+       width: 200px;
+}
+
+
+
+
+/* text typing in css */
+.logo .p {
+       font-size: 50px;
+       white-space: nowrap;
+       overflow: hidden;
+       animation: typewriter 5s steps(1300) infinite alternate,
+              blink 800ms steps(1300) infinite normal;
+       border-right: 2px solid black;
+       margin-left: 20px;
+       /* margin-bottom: -190px; */
+}
+@media only screen and (max-width: 600px) {
+       .logo .p {
+              font-size: 20px;
+              white-space: nowrap;
+              overflow: hidden;
+              animation: typewriter 3s steps(1300) infinite alternate,
+                     blink 800ms steps(1300) infinite normal;
+              border-right: 2px solid black;
+              margin-left: 40px;
+              /* margin-bottom: -190px; */
+       }
+       
+      
+     }
+
+@keyframes typewriter {
+       from {
+              width: 0%;
+       }
+
+       to {
+              width: 90%;
+       }
+}
+
+@keyframes blink {
+       from {
+              border-color: rgb(244, 99, 3);
+       }
+
+       to {
+              border-color: transparent;
+       }
+}
+
+/* image slide design  */
+
+.logo-slider {
+       overflow: hidden;
+       padding: 10px 0 0 0;
+       white-space: nowrap;
+       position: relative;
+}
+
+.logo-slider:hover .logos-slide {
+       animation-play-state: paused;
+}
+
+.logos-slide {
+       display: inline-block;
+       animation: 15s slide infinite linear;
+}
+
+.logos-slide .slide {
+       display: inline-block;
+}
+
+.logos-slide img {
+       max-width: 400px;
+       max-width: 300px;
+       margin: 5px 0;
+}
+
+.slide h2 {
+       font-size: 16px;
+       text-align: left;
+       font-family: 'Arial';
+       font-style: normal;
+       margin: 5px 0;
+}
+
+@keyframes slide {
+       from {
+              transform: translateX(0);
+       }
+
+       to {
+              transform: translateX(-50%);
+       }
+}
+
+
+
+
+
+
+
+/* slide images */
+
+
+.logo-slider {
+       overflow: hidden;
+       padding: 10px 0 0 0;
+       white-space: nowrap;
+       position: relative;
+}
+
+.logo-slider:hover .logos-slide {
+       animation-play-state: paused;
+}
+
+.logos-slide {
+       display: inline-block;
+       animation: 30s slide infinite linear;
+}
+
+.logos-slide .slide {
+       display: inline-block;
+}
+
+.logos-slide img {
+       max-width: 400px;
+       max-width: 300px;
+       margin: 5px 0;
+}
+
+.slide h2 {
+       font-size: 16px;
+       text-align: left;
+       font-family: 'Arial';
+       font-style: normal;
+       margin: 5px 0;
+}
+
+@keyframes slide {
+       from {
+              transform: translateX(0);
+       }
+
+       to {
+              transform: translateX(-50%);
+       }
+}
+
+
+   /* end image slider ........................................................ */
+
+
+.btn {
+       margin-top: -900px;
+       width: 300px;
+       height: 90px;
+       border-radius: 20px;
+       background-color: rgb(4, 56, 244);
+       color: white;
+       font-size: 30px;
+
+
+       top: 50px;
+       -ms-transform: translateY(-50%);
+       transform: translateY(50%);
+
+}
+@media only screen and (max-width: 600px) {
+       .btn {
+              margin-top: -900px;
+              width: 110px;
+              height: 60px;
+              border-radius: 20px;
+              background-color: rgb(2, 67, 243);
+              color: white;
+              font-size: 13px;
+       
+       
+              top: 50px;
+              -ms-transform: translateY(-50%);
+              transform: translateY(50%);
+       
+       }
+      
+      
+     }
+
+/* @media only screen and (min-width: 350em) and (max-width: 900em) {
+
+       .btn {
+              width: 100%;
+              height: 2px;
+              font-size: 3px;
+
+       }
+} */
+ 
+
+.btn:hover {
+       background-color: rgb(2, 244, 67);
+       cursor: pointer;
+       border: 5px solid black;
+}
+
+
+
+@keyframes gradient {
+       0% {
+              background-position: 0% 50%;
+       }
+
+       50% {
+              background-position: 100% 50%;
+       }
+
+       100% {
+              background-position: 0% 50%;
+       }
+}
+
+
+/* about section .................................................................... */
+.about {
+       background: rgb(224, 251, 222);
+       background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+       padding: 100px 0 20px 0;
+       text-align: center;
+   }
+    
+   .about h1 {
+       font-size: 2.5rem;
+       margin-bottom: 20px;
+   }
+    
+   .about p {
+       font-size: 1rem;
+       color: #323030;
+       max-width: 800px;
+       margin: 0 auto;
+   }
+    
+   .about-info {
+       margin: 2rem 2rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: left;
+   }
+    
+   .about-img {
+       width: 20rem;
+       height: 30rem;
+    
+   }
+    
+   .about-img img {
+       width: 105%;
+       height: 60%;
+       border-radius: 5px;
+       /* object-fit: contain; */
+   }
+    
+   .about-info p {
+       font-size: 1.3rem;
+       margin: 0 6rem;
+       text-align: justify;
+   }
+    
+   button {
+       border: none;
+       outline: 0;
+       padding: 10px;
+       margin: 2rem;
+       font-size: 1rem;
+       color: white;
+       background-color: #40b736;
+       text-align: center;
+       cursor: pointer;
+       width: 15rem;
+       border-radius: 4px;
+   }
+    
+   button:hover {
+       background-color: #1f9405;
+   }
+    
+   /* Team Section */
+    
+   .team {
+       padding: 30px 0;
+       text-align: center;
+   }
+    
+   .team h1 {
+       font-size: 2.5rem;
+       margin-bottom: 20px;
+   }
+    
+   .team-cards {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 15px;
+       margin-top: 20px;
+   }
+    
+   .card {
+       background-color: white;
+       border-radius: 6px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+       overflow: hidden;
+       transition: transform 0.2s, box-shadow 0.2s;
+       width: 18rem;
+       height: 25rem;
+       margin-top: 10px;
+   }
+    
+   .card:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+   }
+    
+   .card-img {
+       width: 18rem;
+       height: 12rem;
+   }
+    
+   .card-img img {
+       width: 100%;
+       height: 100%;
+       object-fit: fill;
+   }
+    
+   .card-info button {
+       margin: 2rem 1rem;
+   }
+    
+   .card-name {
+       font-size: 2rem;
+       margin: 10px 0;
+   }
+    
+   .card-role {
+       font-size: 1rem;
+       color: #888;
+       margin: 5px 0;
+   }
+    
+   .card-email {
+       font-size: 1rem;
+       color: #555;
+   }
+    
+   /* Footer */
+   footer {
+       background-color: #222;
+       color: white;
+       text-align: center;
+       padding: 20px 0;
+   }
+    
+   @media (max-width: 768px) {
+       nav {
+           display: block;
+       }
+    
+       .logo {
+           text-align: center;
+       }
+    
+       .nav-links {
+           margin-top: 1rem;
+           justify-content: space-between;
+       }
+    
+       .nav-links li {
+           margin-right: 0;
+       }
+    
+       .about h1 {
+           font-size: 2rem;
+       }
+    
+       .about p {
+           font-size: 0.9rem;
+       }
+    
+       .about-info {
+           flex-direction: column;
+           text-align: center;
+       }
+    
+       .about-img {
+           width: 60%;
+           height: 60%;
+           margin-bottom: 1rem;
+       }
+    
+       .about-info p {
+           margin: 1rem 2rem;
+       }
+    
+       .about-info button {
+           margin: 1rem 2rem;
+           width: 10rem;
+       }
+    
+       .team {
+           margin: 0 1rem;
+       }
+   }
